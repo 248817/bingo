@@ -1,0 +1,191 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+    
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Montserrat', sans-serif;
+  background-image: url('pattern.gif');
+  background-repeat:repeat;
+  max-width: 100%;
+    max-height: auto;
+}
+
+.nameblank{
+    width: 6rem;
+    height: 2rem;
+    margin-left:0.5rem;
+    margin-bottom:2rem;
+    background: transparent;
+    box-shadow: transparent;
+    border-color:transparent;
+    border: none;
+    outline:none;
+    
+}
+.inception_1{
+    margin:auto;
+    width:auto;
+    background-image: url("tablebackground.png");
+    background-size: 100%;
+    padding: 1.5rem;
+    padding-top:3rem;
+    background-repeat:no-repeat;
+
+}
+.inception_2{
+    margin:auto;
+    width:auto;
+    background-image: url("tablebackgroundm.png");
+    background-size: 23.5rem;
+    padding: 0.3rem;
+    padding-top:2rem;
+    background-repeat:no-repeat;
+
+}
+.UI_elementspc{
+    display: flex;
+    flex-direction:column;
+    margin:auto;
+    margin-left:1rem;
+}
+
+.UI_elementsmob{
+    display: flex;
+    flex-direction:row;
+    padding: auto;
+    margin-left:1rem;
+    margin-bottom: 0.5rem;
+}
+#name{
+    margin-bottom: 1rem;
+    width:7rem;
+    height: 2rem;
+}
+.b_button{
+    background: transparent;
+    color: transparent;
+    box-shadow: transparent;
+    border-color:transparent;
+    border: none;
+    outline:none;
+    margin-bottom:1rem;
+    width:7rem;
+    height: 3rem;
+}
+.m_button{
+    background: transparent;
+    color: transparent;
+    box-shadow: transparent;
+    border-color:transparent;
+    border: none;
+    outline:none;
+    margin-right:0.5rem;
+    width:5rem;
+    height: 2rem;
+}
+.draggable-elements {
+
+  align-content: center;
+  align-items:center;
+  display: flex;
+  justify-content: center;
+  margin-left:10rem;
+    margin-right:10rem;
+    margin-top:1rem;
+    margin-bottom:1rem;
+    
+    flex-wrap: wrap;
+}
+.draggable-word {
+  width:auto;
+    
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  margin: 0rem 0.5rem;
+  cursor: move;
+  transition: opacity 0.2s;
+}
+.draggable:hover {
+  opacity: 0.5;
+}
+.droppable-elements{
+    display:flex;
+  justify-content: center;
+  align-items:center;
+}
+._blank{
+    
+    width:10.0rem;
+    margin 3rem auto;
+    justify-content: center;
+}
+.droppable-blank {
+  height: 7rem;
+  width: 7rem;
+    margin:3px;
+  justify-content: center;
+  align-items:center;
+  flex-direction: row;
+  text-align: center;
+  font-size: 2rem;
+  font-weight: bold;
+  background-color: transparent;
+  border:  #111;
+  transition: border-width 0.2s, transform 0.2s, background-color 0.4s;
+}
+.droppable-blankm {
+  height: 5rem;
+  width: 5rem;
+    margin:3px;
+  justify-content: center;
+  align-items:center;
+  flex-direction: row;
+  text-align: center;
+  font-size: 2rem;
+  font-weight: bold;
+  background-color: transparent;
+  border: #111;
+  transition: border-width 0.2s, transform 0.2s, background-color 0.4s;
+}
+.droppable span {
+  font-size: 1.25rem;
+  pointer-events: none; /* The element is never the target of pointer events */
+}
+
+/* Drag and Drop Related Styling */
+
+.droppable.droppable-hover {
+  /* background-color: #bee3f0; */
+  border-width: 5px;
+  transform: scale(1.1);
+}
+.droppable.dropped {
+  border-style: solid;
+  color: #fff;
+}
+.droppable.dropped span {
+  font-size: 0.75rem;
+  margin-top: 0.5rem;
+}
+.droppable.dropped i {
+  pointer-events: none;
+}
+.draggable.dragged {
+    display: none;
+  user-select: none;
+  opacity: 0.1;
+  cursor: default;
+}
+.draggable.dragged:hover {
+  opacity: 0.1;
+}
+
+@media (max-width: 600px) {
+  html { font-size: 14px; }
+  .draggable-elements { margin: 1.5rem; }
+}
